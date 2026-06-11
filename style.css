@@ -4,9 +4,31 @@
 html {
   background-color: white;
   padding-left: 20px;
+  margin: auto;
+}
+
+body{
+  background-color: antiquewhite;
+  margin: auto;
+  text-align: center;
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  background-color: bisque;
 }
+
+li{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.memImg{
+  width: 50%;
+}
+
+

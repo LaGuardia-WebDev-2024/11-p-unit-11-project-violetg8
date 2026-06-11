@@ -6,7 +6,7 @@ Requirements
 [  ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -28,16 +28,19 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
+        <img class="memImg" src="badge-english.png">
         <p>More about this memory.</p>
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
+        <img class="memImg" src="unnamed-1.jpg">
         <p>More about this memory.</p>
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
+        <img class="memImg" src="maxresdefault-2.jpg">
         <p>More about this memory</p>
       </li>
     </ol>
@@ -45,20 +48,28 @@ Select ONE Additional
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+
+      $(".memImg").hide();
+
       // ======================== Button #1
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "red");
+        $(".memImg").show();
+        $("#mem1").text("Made it out of AO3 beta");
+        $("#mem3").text("Watched Paw Patrol Movie");
+         $("#mem2").text("Big Chonk");
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "purple");
+        
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+        $("#mem3").css("color", "yellow");
+        $("p").text("Big Chonk");
       });
 
 
